@@ -1,0 +1,22 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@school/ui": ["src/components/ui/index.ts"],
+      "@school/db": ["src/db/index.ts"],
+      "@school/utils": ["src/lib/index.ts"],
+      "@school/assets": ["src/assets/index.ts"],
+      "@school/validator": ["src/validator/index.ts"],
+      "@school/components": ["src/components/base/index.ts"]
+    }
+  }
+}

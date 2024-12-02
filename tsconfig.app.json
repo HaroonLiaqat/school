@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "incremental": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    //  dynamic imports
+    "baseUrl": ".",
+    "paths": {
+      "@school/ui": ["src/components/ui/index.ts"],
+      "@school/db": ["src/db/index.ts"],
+      "@school/utils": ["src/lib/index.ts"],
+      "@school/hooks": ["src/hooks/index.ts"],
+      "@school/assets": ["src/assets/index.ts"],
+      "@school/validator": ["src/validator/index.ts"],
+      "@school/components": ["src/components/base/index.ts"]
+    }
+  },
+  "include": ["src"]
+}
